@@ -1,0 +1,8 @@
+.pro {
+    border: 3px solid black;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-content: center;
+    position: relative;
+}
