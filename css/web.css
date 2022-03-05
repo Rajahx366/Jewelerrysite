@@ -1,34 +1,51 @@
-* {
-    margin: 0px;
-}
+
 .nav {
     width: 100%;
-    height: 100px;
+    height: 5rem;
     background-color: black;
     color:aliceblue;
+    align-content: center;
+    
 }
 .link{
     text-decoration: none;
     margin-right: 3rem;
     margin-top: 30px;
     color: white;
+    font-size: 1em;
     
 }
 
-.linkss{
-
-    margin-top: 3rem;
-    
-    
+.links{
+    margin-top: 10px;
 }
+
+.hover:hover{
+    color: aqua;
+    text-decoration: dashed;
+    font-weight: bold;
+}
+
 .BOX{
-
-    width: 55rem;
-    height: 20rem;
-    background: turquoise;
     margin-left: 3rem;
     margin-top: 5rem;
 }
 .flex{
     display: flex;
+    border: solid;
+    background: linear-gradient(rgb(206, 198, 198), white, rgb(221, 221, 221) );
+}
+
+.centered{
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.description{
+    background-color: black;
+    width: auto;
+    height: auto;
+    color: aliceblue;
 }
