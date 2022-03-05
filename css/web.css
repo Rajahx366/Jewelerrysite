@@ -1,12 +1,23 @@
 
+html{
+    font-family: -apple-system, BlinkMacSystemFont,
+     'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+      'Open Sans', 'Helvetica Neue', sans-serif;
+}
 .nav {
     width: 100%;
-    height: 3rem;
     background-color: black;
     color:aliceblue;
-    align-content: center;
+    display: flex;
     
 }
+
+.logo{
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+
 .link{
     text-decoration: none;
     margin-right: 3vw;
@@ -15,40 +26,47 @@
     font-size: 1em;
     
 }
+.checkbtn {
+    width: 30px;
+    height: 5px;
+    background-color: aqua;
+    display: none;
+    margin-top: 5px;
+}
+
+.links {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
 
 @media screen and (min-width: 0px) and (max-width:700px) {
     .nav{
-    
        text-align: center;
-       height: 100%;
+       display: block;
+       
     }
 
     a{
-        left:100%;
         position: relative;
         text-align: center;
-        padding-left: 40vw;
-        padding-right: 40vw;
+    }
+
+    .links{
         display: block;
-        
+        justify-content: center;
+        margin-bottom: 30px;
     }
 
-    .box{
-        width: 30px;
-        height: 5px;
-        background-color: aqua;
-        display:block;
-        margin-top: 5px;
-    }
+}  
 
-    .box:hover{
-        left:0%;
-    }
+
+#check{
+    display: none;
 }
 
-.links{
-    margin-top: 10px;
-}
+
+
 
 .hover:hover{
     color: aqua;
@@ -58,15 +76,18 @@
 }
 
 .BOX{
-    margin-left: 3rem;
-    margin-top: 5rem;
+    margin-left: 10px;
+    margin-right:10px ;
+    margin-top: 10px;
+    height: 100%;
 }
 .flex{
     display: flex;
+    width: 100%;
+    justify-content: center;
     border: solid;
     background: linear-gradient(rgb(206, 198, 198), white, rgb(221, 221, 221) );
 }
-
 
 
 .centered{
