@@ -3,7 +3,10 @@ html{
     font-family: -apple-system, BlinkMacSystemFont,
      'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
       'Open Sans', 'Helvetica Neue', sans-serif;
+
+    background: linear-gradient(0deg, rgb(217, 175, 217) 0%, rgb(151, 217, 225) 50%, rgb(226, 223, 185) 100%);
 }
+
 .nav {
     width: 100%;
     background-color: black;
@@ -14,10 +17,26 @@ html{
 
 .logo{
     display: flex;
-    justify-content: center;
-    width: auto;
+    width: 100%;
+    margin-left: 20px;
+}
+.mover{
+    background-repeat: no-repeat;
+    animation: movinger 1s linear infinite;
+    
 }
 
+@keyframes movinger {
+
+    from{
+        transform: rotateY(0deg);
+    }
+
+    to{
+        transform: rotateY(360deg);
+    }
+    
+}
 .link{
     text-decoration: none;
     margin-right: 3vw;
@@ -40,7 +59,7 @@ html{
     justify-content: end;
 }
 
-@media screen and (min-width: 0px) and (max-width:700px) {
+@media screen and (min-width: 0px) and (max-width:900px) {
     .nav{
        text-align: center;
        display: block;
@@ -57,6 +76,31 @@ html{
         justify-content: center;
         margin-bottom: 30px;
     }
+
+    .logo{
+        margin-left: 0px;
+        justify-content: center;
+    }
+
+    .BOX{
+        width: auto;
+        height: auto;
+    }
+
+    #r1e{
+        width: 100%;
+        height: 100%;
+    }
+
+    #r2e {
+        width: 100%;
+        height: 100%;
+    }
+
+    .mover{
+        display: none;
+    }
+
 
 }  
 
@@ -76,25 +120,51 @@ html{
 }
 
 .BOX{
-    margin-left: 10px;
-    margin-right:10px ;
-    margin-top: 10px;
+    margin: 70px;
     height: 100%;
-}
-.flex{
-    display: flex;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+#r1e{
+    border: 1px solid rgb(255, 255, 255);
+    animation: moving 5s linear infinite;
+    transition: all 1s;
+}
+
+#r2e {
+    border: 1px solid rgb(251, 255, 0);
+    animation: moving 5s linear infinite;
+    transition: all 1s;
+}
+
+
+.flex{
+    background-color: black;
+    background-repeat: no-repeat;
+    opacity: 0.95;
+    display: flex;
     justify-content: center;
     border: solid;
-    background: linear-gradient(rgb(206, 198, 198), white, rgb(221, 221, 221) );
+    margin-top: 20px;
+    border: 1px solid blue;
 }
 
 
-.centered{
-    margin-top: 1rem;
-    align-items: center;
-    justify-content:center;
-    display: flex;
+@keyframes moving {
+  from{
+      border: 1px solid yellow;
+  }    
+  50%{
+      border: 1px solid blue;
+  }
+
+  to{
+      border: 1px solid green
+  }
 }
 
 .description{
@@ -104,5 +174,99 @@ html{
     height: auto;
     color: aliceblue;
     text-align: center;
-    padding: 10px;
+    padding: 2rem;
+    
 }
+
+.rings-bracelets{
+    margin-top: 3rem;
+    display: flex;
+    
+}
+
+.rings div{
+    padding-left: 20px;
+    text-align: start;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+
+.block{
+    background-color: black;
+    color: aliceblue;
+    border: solid white;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 30px
+}
+
+#socials{
+    margin-top: 1rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: black;
+    color: aliceblue;
+
+}
+
+ /* Style all font awesome icons */
+ .fa {
+     padding: 20px;
+     font-size: 30px;
+     width: 50px;
+     text-align: center;
+     text-decoration: none;
+ }
+
+ /* Add a hover effect if you want */
+ .fa:hover {
+     opacity: 0.7;
+ }
+
+ /* Set a specific color for each brand */
+
+ /* Facebook */
+ .fa-facebook {
+     
+     color: white;
+ }
+
+ /* Twitter */
+ .fa-others {
+     padding-top: 29px;
+     color: white;
+ }
+
+
+ .socials-logos{
+     display: flex;
+     width: 100%;
+     justify-content: start;
+ }
+
+ #guide{
+     padding-top: 22px;
+ }
+
+ #bodytxt{
+     font-size: 1.5rem;
+ }
+
+ @media screen and (min-width: 0px) and (max-width:800px) {
+     .rings-bracelets{
+         display: block;
+     }
+ }
+
+.final{
+    margin-right: 1.5rem;
+    margin-top: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    
+}
+
+
