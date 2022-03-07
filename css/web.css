@@ -251,13 +251,17 @@ html{
      font-size: 1.5rem;
  }
 
- @media screen and (min-width: 0px) and (max-width:800px) {
+ @media screen and (min-width: 0px) and (max-width:1000px) {
      .rings-bracelets{
          display: block;
      }
 
      #socials{
          display: block;
+     }
+
+     #braca{
+         margin-left: 47vw ;
      }
  }
 
