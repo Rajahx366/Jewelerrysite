@@ -1,10 +1,16 @@
 .mainbody{ 
     display: flex;
     justify-content: center;
-
+    text-align: center;
     width: 100%;
+    font-size: 2rem;
 }
 
+@media screen and (min-width: 0px) and (max-width:900px) {
+    .mainbody{
+        font-size: 1.3rem;
+    }
+}
 html{
     height: 100vh;
 }
