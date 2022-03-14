@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .mainbody{ 
     display: flex;
     justify-content: center;
@@ -8,8 +7,6 @@
     color: wheat;
     background-color: black;
 }
-=======
->>>>>>> 7aa909f5d97fa29af1cbb1f42577c808da8ae5cd
 
 
 /*@media screen and (min-width: 0px) and (max-width:900px) {
@@ -19,9 +16,6 @@
 }
 html{
     height: 100vh;
-<<<<<<< HEAD
-    scroll-behavior: smooth;
-=======
 } */
 .container{
     width:1000px;
@@ -53,5 +47,4 @@ html{
     justify-content: center;
     margin-left: 30px;
     font-size: 1.6rem;
->>>>>>> 7aa909f5d97fa29af1cbb1f42577c808da8ae5cd
 }
