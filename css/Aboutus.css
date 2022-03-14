@@ -1,3 +1,12 @@
+.mainbody{ 
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    font-size: 2rem;
+    color: wheat;
+    background-color: black;
+}
 
 
 /*@media screen and (min-width: 0px) and (max-width:900px) {
